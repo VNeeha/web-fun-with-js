@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.headingSection{
+    height:10vh;
+    background-color: rgb(39, 39, 77);
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bodySection{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:15vh;
+
+}
+.symbolBtns{
+    display: flex;
+    gap:2rem;
+    margin-top: 6rem;
+}
+/* .symBtn{
+    width:25vh;
+    height:25vh ;
+    border-radius: 50%;
+    border: none;
+    box-shadow: 3px black;
+} */
+ .symBtn {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;      /* Crop image overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.symBtn img {
+    width: 100%;   /* Adjust percentage as needed */
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.rock{
+    background-color: oklab(62.073% 0.20764 0.02175 / 0.625);
+}
+.paper{
+    background-color: rgb(224, 142, 224);
+}
+.scissor{
+    background-color: oklch(63.399% 0.20001 279.06 / 0.699);
+}
+.scoreSection{    display: flex;
+    gap:2rem;
+    font-size: 1.5rem;
+}
+.score{
+    display: flex ;
+    flex-direction: column;
+    gap:1.5rem;
+    align-items: center;
+}
+.msgSection{
+    background-color:black;
+    color: whitesmoke;
+    box-shadow: 2px black;
+    font-size: 1.5rem;
+    padding:1rem;
+    border-radius: 20px;
+   
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+}
