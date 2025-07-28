@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--  -->
+    <main>
+        <div class="container">
+            <h2>Currency Converter</h2>
+            <form action="" class="form" >
+                <div class="amount">
+                    <label for="amount">Enter amount:</label>
+                    <input type="text" class="amtInput" value="1">
+                </div>
+                <div class="selectCurr">
+                    <div class="fromBlock">
+                        <p>From</p>
+                        <div class="fromCurr">
+                            <img class="fromImg" src="https://flagsapi.com/US/flat/64.png" alt="">
+                            <select name="from" class="dropdown" id="from">
+                               <!-- added in js -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="toBlock">
+                        <p>To</p>
+                        <div class="toCurr">
+                            <img class="toImg" src="https://flagsapi.com/IN/flat/64.png" alt="">
+                            <select name="to" class="dropdown" id="to">
+                                
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="msg"></p>
+                <button class="btn">Get Exchange Rate</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <script src="countryCodes.js"></script>
+        <script src="app.js"></script>
+    </footer>
+</body>
+</html>
